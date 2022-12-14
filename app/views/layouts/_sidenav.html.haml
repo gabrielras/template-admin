@@ -1,0 +1,36 @@
+#sidenav-collapse-main.collapse.navbar-collapse
+  %form.mt-4.mb-3.d-md-none
+    .input-group.input-group-rounded.input-group-merge
+      %input.form-control.form-control-rounded.form-control-prepended{"aria-label" => "Search", placeholder: "Search", type: "search"}/
+      .input-group-prepend
+        .input-group-text
+          %span.fa.fa-search
+  %ul.navbar-nav
+    %li.nav-item.active
+      %a.nav-link.active{href: "./index.html"}
+        %i.ni.ni-tv-2.text-primary
+        Dashboard
+    %li.nav-item
+      %a.nav-link{href: "./examples/icons.html"}
+        %i.ni.ni-planet.text-blue
+        Icons
+    %li.nav-item
+      %a.nav-link{href: "./examples/maps.html"}
+        %i.ni.ni-pin-3.text-orange
+        Maps
+    %li.nav-item
+      %a.nav-link{href: "./examples/profile.html"}
+        %i.ni.ni-single-02.text-yellow
+        User profile
+    %li.nav-item
+      %a.nav-link{href: "./examples/tables.html"}
+        %i.ni.ni-bullet-list-67.text-red
+        Tables
+    %li.nav-item
+      %a.nav-link{href: "./examples/login.html"}
+        %i.ni.ni-key-25.text-info
+        Login
+    %li.nav-item
+      %a.nav-link{href: "./examples/register.html"}
+        %i.ni.ni-circle-08.text-pink
+        Register
