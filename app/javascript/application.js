@@ -13,5 +13,8 @@ let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 import "@nathanvda/cocoon"
 
+import '@client-side-validations/client-side-validations/src'
+import './rails.validations'
+
 import './template/bootstrap.bundle.min.js'
 import './custom/toast.js'
