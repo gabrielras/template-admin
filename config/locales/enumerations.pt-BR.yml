@@ -1,0 +1,102 @@
+pt-BR:
+  enumerations:
+    bidding_process:
+      bid_types:
+        lowest_price: Menor Preço
+        best_technique: Melhor Técnica
+        technique_and_price: Técnica e Preço
+        bigger_discount: Maior Desconto
+      dispute_modes:
+        open: Aberto
+        open_closed: Aberto Fechado
+      modalities:
+        competition: Concorrência
+        electronic_dispenser: Dispensa Eletrônica
+        electronic_trading: Pregão Eletrônico
+    company_profile:
+      activities:
+        auctioneer: Licitante
+        bidder: Fornecedor
+      statuses:
+        absent_legal_representatives: Representante Legal Ausente
+        completed: Cadastro Liberado
+        rejected: Informações a Retificar
+        blocked: Aguardando Pagamento
+        pending: Aguardando Revisão de Informações
+      types_of_companies:
+        mei: MEI
+        me: ME
+        epp: EPP
+        not_selected: Não Selecionado
+    role:
+      role_types:
+        admin: Administrador
+        bidder: Fornecedor
+        auctioneer: Licitante
+    user:
+      invitation_statuses:
+        pedding: Pendente
+        accepted: Aceito
+    challenge_bidding_process:
+      statuses:
+        pending: Pendente
+        approved: Deferido
+        rejected: Negada
+    receipt_of_clarification:
+      statuses:
+        pending: Pendente
+        approved: Deferido
+        rejected: Negada
+    enable_document:
+      statuses:
+        pending: Aguardando Habilitação dos Documentos
+        rectify: Em Retificação
+        approved: Habilitado
+        rejected: Inabilitado
+    bidder_document:
+      statuses:
+        pending: Aguardando Habilitação dos Documentos
+        approved: Aprovado
+        waiting_for_approval: Aguardando Aprovação
+        rectify: Retificar
+        rejected: Deferido
+    manifestation_of_appeal:
+      statuses:
+        pending: Pendente
+        approved: Deferido
+        rejected: Rejeitado
+    receipt_of_counterargument:
+      statuses:
+        pending: Pendente
+        approved: Deferido
+        rejected: Rejeitado
+    receipt_of_resource:
+      statuses:
+        pending: Pendente
+        approved: Deferido
+        rejected: Rejeitado
+    auctioneer_bidding_process:
+      types_auctioner:
+        owner: Criador
+        manager: Gerenciar
+        interact: Interagir
+      statuses:
+        approved: Aprovado
+        pending: Pendente
+        rejected: Rejeitado
+    user_to_bidding_processes:
+      states:
+        homologation: Homologação
+        adjudication: Adjudicação
+    payments:
+      states:
+        pending: Pendente
+        approved: Aprovado
+    adjusted_proposal:
+      statuses:
+        pending: Aguardando Envio de Proposta Ajustada
+        approved: Aprovado
+        waiting_for_approval: Aguardando Aprovação
+        rectify: Retificar
+        rejected: Rejeitado
+

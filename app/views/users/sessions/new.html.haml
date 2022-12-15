@@ -1,0 +1,30 @@
+.row.justify-content-center
+  .col-lg-5.col-md-7
+    .card.bg-white.shadow.border-0
+      .card-body.px-lg-5.py-lg-5
+        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          .form-group
+            .input-group.input-group-alternative
+              = f.email_field :email, autofocus: true,
+                              autofocus: true,
+                              placeholder: 'email',
+                              class: 'form-control'
+          .form-group
+            .input-group.input-group-alternative
+              = f.password_field :password,
+                       autocomplete: "current-password",
+                       class: 'form-control',
+                       placeholder: 'Senha'
+
+          - if devise_mapping.rememberable?
+            .custom-control.custom-control-alternative.custom-checkbox
+              .custom-control.custom-checkbox.small
+                = f.check_box :remember_me, class: 'custom-control-input', id: 'customCheck'
+                %label.custom-control-label{:for => "customCheck"}
+                  %span.text-muted Remember me
+         
+          .text-center
+            = f.submit 'Entrar', class: 'btn btn-primary w-100'
+
+            = render "users/shared/links"
+   

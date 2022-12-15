@@ -1,0 +1,6 @@
+pt-BR:
+  models:
+    concerns:
+      errors:
+        cpf_is_invalid: "CPF é Inválido."
+        cnpj_is_invalid: "CNPJ é Inválido."

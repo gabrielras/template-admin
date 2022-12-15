@@ -1,4 +1,16 @@
 GIT
+  remote: https://github.com/heartcombo/devise.git
+  revision: 6d32d2447cc0f3739d9732246b5a5bde98d9e032
+  branch: main
+  specs:
+    devise (4.8.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
+
+GIT
   remote: https://github.com/varvet/pundit.git
   revision: a5d756adb518c64697c6652b73cacc12e17d0a70
   specs:
@@ -132,12 +144,6 @@ GEM
     delayed_job_active_record (4.1.7)
       activerecord (>= 3.0, < 8.0)
       delayed_job (>= 3.0, < 5)
-    devise (4.8.1)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0)
-      responders
-      warden (~> 1.2.3)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
@@ -417,7 +423,7 @@ DEPENDENCIES
   data-confirm-modal
   debug
   delayed_job_active_record
-  devise (= 4.8.1)
+  devise!
   dotenv-rails (= 2.7.6)
   draper
   enumerate_it (= 3.2.1)

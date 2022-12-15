@@ -1,4 +1,10 @@
+//Bootstrap
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
 
+//Template
 @import 'template/argon-dashboard.scss';
+
+//Plugins
+@import "select2/dist/css/select2.min.css";
+@import "boxicons/css/boxicons.min.css";

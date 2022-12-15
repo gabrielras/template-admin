@@ -1,0 +1,98 @@
+pt-BR:
+  helpers:
+    form: "Formulário"
+    show: "Visualizar"
+    actions: "Ações"
+    links:
+      recibo: Recibo
+      adv_search: Busca Avançada
+      show: Visualizar
+      print: Imprimir
+      print_dutes: Imprimir DUTes
+      print_boleto: Imprimir Boleto
+      back: "Voltar"
+      cancel: "Cancelar"
+      confirm: "Confirma a execução dessa operação ?"
+      destroy: "Remover"
+      new: "Cadastrar"
+      edit: "Editar"
+      add: "Adicionar"
+      users: "Usuários"
+      sign_out: Sair
+      search: Buscar
+      close: Fechar
+      clear: Limpar
+      history: Histórico
+      home: Página Inicial
+      update: "Atualizar - %{position}"
+      read_more: Leia mais
+      more: Mais
+      image: Imagem
+      reset_password: Reiniciar Senha
+    label:
+      type_search: Tipo de Busca
+      type_status: Tipo de Status
+      initial_date: Data Inicial
+      final_date: Data Final
+      initial_period: Período Inicial
+      final_period: Período Final
+      initial_period_venc: Período Inicial ( Vencimento )
+      final_period_venc: Período Final ( Vencimento )
+      find_by: Buscar por
+      find_by_cartorio: Buscar por Cartório
+      user: Usuário
+      password: Senha
+      password_confirmation: Confirmação da senha
+      layout_print: Layout de Impressão?
+      filter: Filtrar
+      add_info: Informações Adicionais
+    submit:
+      search: Consultar
+      confirm: Confirmar
+      save: Salvar
+      accept: Eu Aceito
+      update: Atualizar
+      send:  Enviar
+      add: Adicionar
+      finish: Finalizar
+    titles:
+      download: Baixar Documento
+      home: "Principal"
+      edit: "Editar %{model}"
+      save: "Salvar %{model}"
+      new: "Cadastrar %{model}"
+      delete: "Remover %{model}"
+      usuarios: 'Listar Usuários'
+      reports: Relatórios de %{model}
+      attention_read_question: 'Atenção, leia a pergunta!'
+      search_form: Formulário de Pesquisa
+      form: Informe os dados para %{model}
+    home:
+      contact_info: Informações de Contato
+      social_network: Redes Sociais
+      about_us: Quem Somos
+      phone:   'Telefone:'
+      address: 'Endereço:'
+      zipcode: 'CEP:'
+    menu:
+      active_matches: Jogos Ativos
+      next_matches: Próximos Jogos
+    descriptions:
+      team: "Equipe"
+      single: "Individual"
+  submit:
+    create: Cadastrar %{model}
+    update: Atualizar %{model}
+
+  pt-BR:      "Português (Brasil)"
+  en:         "English"
+  es:         "Español"
+
+  sunday:    Domingo
+  monday:    Segunda-Feira
+  tuesday:   Terça-Feira
+  wednesday: Quarta-Feira
+  thursday:  Quinta-Feira
+  friday:    Sexta-Feira
+  saturday:  Sábado
+  weekdays: Dias de Jogos

@@ -1,0 +1,17 @@
+pt-BR:
+  user:
+    admin:
+      users:
+        index:
+          title: Usuários
+          new: Cadastrar Usuário
+          table_title: Listagem de Usuários
+        new:
+          title: Cadastrar
+          header_title: Cadastrar Usuário
+        edit:
+          title: Editar
+          header_title: Editar Usuário
+        list:
+          lock: Bloquear
+          unlock: Desbloquear

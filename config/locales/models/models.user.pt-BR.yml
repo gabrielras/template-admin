@@ -1,0 +1,21 @@
+pt-BR:
+  activerecord:
+    models:
+      user:
+        one: Usuário
+        other: Usuários
+    attributes:
+      user:
+        company_profiles: Empresa
+        auctioneer_profile_id: Perfil
+        full_name: Nome Completo
+        cpf: CPF
+        email: Email
+        phone_number: Número de Celular
+        invitation_status: Situação do Convite
+        blocked: Bloqueado
+        created_at: Data de Cadastrado
+        updated_at: Data de Atualização
+        company_profiles: Contrato Social
+        password: Senha
+        password_confirmation: Confirmação de senha

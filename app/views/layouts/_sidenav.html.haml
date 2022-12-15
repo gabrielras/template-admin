@@ -7,30 +7,28 @@
           %span.fa.fa-search
   %ul.navbar-nav
     %li.nav-item.active
-      %a.nav-link.active{href: "./index.html"}
+      %a.nav-link.active
         %i.ni.ni-tv-2.text-primary
         Dashboard
+    - if policy([:user, :admin, User]).index?
+      %li.nav-item
+        = link_to user_admin_users_path, class: 'nav-link' do
+          %i.menu-icon.tf-icons.bx.bx-award
+          Usuário
+    - if policy([:user, :admin, Office]).index?
+      %li.nav-item
+        = link_to user_admin_offices_path, class: 'nav-link' do
+          %i.fa-solid.fa-users.fs-6.me-2
+          Cargos
+
+    %hr.separator
     %li.nav-item
-      %a.nav-link{href: "./examples/icons.html"}
-        %i.ni.ni-planet.text-blue
-        Icons
-    %li.nav-item
-      %a.nav-link{href: "./examples/maps.html"}
-        %i.ni.ni-pin-3.text-orange
-        Maps
-    %li.nav-item
-      %a.nav-link{href: "./examples/profile.html"}
+      = link_to user_common_notifications_path, class: 'nav-link' do
         %i.ni.ni-single-02.text-yellow
-        User profile
+        Notificação
+        .span.badge.badge-light.text-danger
+          = Notification.where(user: current_user, read_confirmation: false).size
     %li.nav-item
-      %a.nav-link{href: "./examples/tables.html"}
+      = link_to destroy_user_session_path, :method => :get, class: 'nav-link' do
         %i.ni.ni-bullet-list-67.text-red
-        Tables
-    %li.nav-item
-      %a.nav-link{href: "./examples/login.html"}
-        %i.ni.ni-key-25.text-info
-        Login
-    %li.nav-item
-      %a.nav-link{href: "./examples/register.html"}
-        %i.ni.ni-circle-08.text-pink
-        Register
+        Sair

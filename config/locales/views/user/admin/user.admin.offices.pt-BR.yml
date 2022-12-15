@@ -1,0 +1,14 @@
+pt-BR:
+  user:
+    admin:
+      offices:
+        index:
+          title: Cargos
+          new: Cadastrar
+          table_title: Listagem de Cargos
+        new:
+          title: Cadastrar
+          header_title: Cadastrar Cargo
+        edit:
+          title: Editar
+          header_title: Editar Cargo

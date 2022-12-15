@@ -23,17 +23,8 @@
       / Navbar
       %nav#navbar-main.navbar.navbar-top.navbar-expand-md.navbar-dark
         .container-fluid
-          / Brand
-          %a.h4.mb-0.text-white.text-uppercase.d-none.d-lg-inline-block{href: "./index.html"} Dashboard
-          / Form
-          %form.navbar-search.navbar-search-dark.form-inline.mr-3.d-none.d-md-flex.ml-lg-auto
-            .form-group.mb-0
-              .input-group.input-group-alternative
-                .input-group-prepend
-                  %span.input-group-text
-                    %i.fas.fa-search
-                %input.form-control{placeholder: "Search", type: "text"}/
-          / User
+          .h5.mb-0.text-white.text-uppercase.d-none.d-lg-inline-block Dashboard
+          
           %ul.navbar-nav.align-items-center.d-none.d-md-flex
             %li.nav-item.dropdown
               %a.nav-link.pr-0{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
@@ -46,21 +37,14 @@
                 %a.dropdown-item{href: "./examples/profile.html"}
                   %i.ni.ni-single-02
                   %span My profile
-                %a.dropdown-item{href: "./examples/profile.html"}
-                  %i.ni.ni-settings-gear-65
-                  %span Settings
-                %a.dropdown-item{href: "./examples/profile.html"}
-                  %i.ni.ni-calendar-grid-58
-                  %span Activity
-                %a.dropdown-item{href: "./examples/profile.html"}
-                  %i.ni.ni-support-16
-                  %span Support
+
                 .dropdown-divider
                 %a.dropdown-item{href: "#!"}
                   %i.ni.ni-user-run
                   %span Logout
 
-      .header.bg-gradient-primary.pb-8.pt-5.pt-md-8
-        .container-fluid
-          .header-body
-            = yield
+      .header.pb-8.pt-5.pt-md-8{style: "background-color: #696be4"}
+      .container-fluid.mt--7
+        .header-body
+          = yield
+      = flash_message

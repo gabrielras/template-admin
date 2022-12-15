@@ -55,7 +55,7 @@ gem 'audited', '~> 5.0'
 gem 'cocoon'
 gem 'cpf_cnpj', '~> 0.2.1'
 gem 'delayed_job_active_record'
-gem 'devise', '4.8.1'
+gem "devise", github: "heartcombo/devise", branch: "main"
 gem 'dotenv-rails', '2.7.6'
 gem 'enumerate_it', '3.2.1'
 gem 'friendly_id', '~> 5.4.0'

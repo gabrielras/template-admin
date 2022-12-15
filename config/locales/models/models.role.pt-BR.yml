@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      role:
+        one: Função
+        other: Funções
+    attributes:
+      role:
+        role_type: Tipo da Função
+        auctioneer_profile: Perfil do Leiloeiro
+        created_at: Data de Cadastrado
+        updated_at: Data de Atualização

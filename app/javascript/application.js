@@ -1,7 +1,7 @@
 // Entry point for the build script in your package.json
 import "@hotwired/turbo-rails"
 import "./controllers"
-import "bootstrap"
+import 'boxicons'
 
 import "./src/jquery"
 import 'jquery-ui'
@@ -11,4 +11,7 @@ let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)  
 })
 
+import "@nathanvda/cocoon"
+
 import './template/bootstrap.bundle.min.js'
+import './custom/toast.js'
