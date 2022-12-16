@@ -2,6 +2,8 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import 'boxicons'
+import * as bootstrap from "bootstrap"
+window.bootstrap = bootstrap
 
 import "./src/jquery"
 import 'jquery-ui'

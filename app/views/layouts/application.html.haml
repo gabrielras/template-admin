@@ -16,11 +16,9 @@
   %body
     %nav#sidenav-main.navbar.navbar-vertical.fixed-left.navbar-expand-md.navbar-light.bg-white
       .container-fluid
-        = render 'layouts/navbar'
-        / Collapse
+        = render 'layouts/navbar/mobile'
         = render 'layouts/sidenav'
     .main-content
-      / Navbar
       %nav#navbar-main.navbar.navbar-top.navbar-expand-md.navbar-dark
         .container-fluid
           .h5.mb-0.text-white.text-uppercase.d-none.d-lg-inline-block Dashboard
@@ -31,20 +29,11 @@
                 .media.align-items-center
                   .media-body.ml-2.d-none.d-lg-block
                     %span.mb-0.text-sm.font-weight-bold Jessica Jones
-              .dropdown-menu.dropdown-menu-arrow.dropdown-menu-right
-                .dropdown-header.noti-title
-                  %h6.text-overflow.m-0 Welcome!
-                %a.dropdown-item{href: "./examples/profile.html"}
-                  %i.ni.ni-single-02
-                  %span My profile
-
-                .dropdown-divider
-                %a.dropdown-item{href: "#!"}
-                  %i.ni.ni-user-run
-                  %span Logout
+              = render 'layouts/navbar/menu'
 
       .header.pb-8.pt-5.pt-md-8{style: "background-color: #696be4"}
       .container-fluid.mt--7
         .header-body
           = yield
+          = turbo_frame_tag "remote_modal"
       = flash_message

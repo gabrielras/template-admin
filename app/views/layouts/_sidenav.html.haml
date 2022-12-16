@@ -1,14 +1,17 @@
 #sidenav-collapse-main.collapse.navbar-collapse
-  %form.mt-4.mb-3.d-md-none
-    .input-group.input-group-rounded.input-group-merge
-      %input.form-control.form-control-rounded.form-control-prepended{"aria-label" => "Search", placeholder: "Search", type: "search"}/
-      .input-group-prepend
-        .input-group-text
-          %span.fa.fa-search
+  .navbar-collapse-header.d-md-none
+    .row
+      .col-6.collapse-brand
+        %a{href: "./index.html"}
+          %img{src: "./assets/img/brand/blue.png"}/
+      .col-6.collapse-close
+        %button.navbar-toggler{"aria-controls" => "sidenav-main", "aria-expanded" => "true", "aria-label" => "Toggle sidenav", "data-target" => "#sidenav-collapse-main", "data-toggle" => "collapse", type: "button"}
+          %span
+          %span
   %ul.navbar-nav
-    %li.nav-item.active
-      %a.nav-link.active
-        %i.ni.ni-tv-2.text-primary
+    %li.nav-item
+      = link_to root_path, class: 'nav-link' do
+        %i.menu-icon.tf-icons.bx.bx-award
         Dashboard
     - if policy([:user, :admin, User]).index?
       %li.nav-item
@@ -18,17 +21,17 @@
     - if policy([:user, :admin, Office]).index?
       %li.nav-item
         = link_to user_admin_offices_path, class: 'nav-link' do
-          %i.fa-solid.fa-users.fs-6.me-2
+          %i.menu-icon.tf-icons.bx.bx-award
           Cargos
 
     %hr.separator
     %li.nav-item
       = link_to user_common_notifications_path, class: 'nav-link' do
-        %i.ni.ni-single-02.text-yellow
+        %i.menu-icon.tf-icons.bx.bx-award
         Notificação
         .span.badge.badge-light.text-danger
           = Notification.where(user: current_user, read_confirmation: false).size
     %li.nav-item
       = link_to destroy_user_session_path, :method => :get, class: 'nav-link' do
-        %i.ni.ni-bullet-list-67.text-red
+        %i.menu-icon.tf-icons.bx.bx-award
         Sair
